@@ -443,11 +443,11 @@ $$
 
 使用梯度下降或者其他优化算法最小化上述代价函数，若梯度下降法，则求导得到的更新式如下：
 $$
-x_k^{(i)}:=x_k^{(i)}-\alpha\left(\sum_{j:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\theta_k^{j}+\lambda x_k^{(i)}\right)
+x_k^{(i)}:=x_k^{(i)}-\alpha\left(\sum_{j:r(i,j)=1}(((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})\theta_k^{j}+\lambda x_k^{(i)}\right)
 $$
 
 $$
-\theta_k^{(i)}:=\theta_k^{(i)}-\alpha\left(\sum_{i:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}x_k^{(i)}+\lambda \theta_k^{(j)}\right)
+\theta_k^{(i)}:=\theta_k^{(i)}-\alpha\left(\sum_{i:r(i,j)=1}(((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})x_k^{(i)}+\lambda \theta_k^{(j)}\right)
 $$
 
 总结协同过滤算法使用步骤如下：
